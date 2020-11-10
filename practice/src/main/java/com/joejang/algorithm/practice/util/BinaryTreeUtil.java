@@ -1,21 +1,16 @@
 package com.joejang.algorithm.practice.util;
 
-import com.joejang.algorithm.practice.binarytree.ErChaShuDeZuiJinGongGongZuXian;
-
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Objects;
 import java.util.Queue;
-import java.util.function.IntFunction;
-import java.util.stream.Collectors;
 
 public class BinaryTreeUtil {
     public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
+        public int val;
+        public TreeNode left;
+        public TreeNode right;
 
-        TreeNode(int x) {
+        public TreeNode(int x) {
             val = x;
         }
     }

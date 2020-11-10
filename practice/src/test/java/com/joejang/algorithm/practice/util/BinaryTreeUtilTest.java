@@ -30,4 +30,13 @@ public class BinaryTreeUtilTest {
         Integer[] res = BinaryTreeUtil.treeNodeToArray(treeNode);
         Assert.assertArrayEquals(array, res);
     }
+
+    @Test(expected = AssertionError.class)
+    public void test004() {
+        Integer[] array0 = new Integer[]{3, 5, 1, 6, 2, 0, 8, null, null, 7, 4};
+        BinaryTreeUtil.TreeNode treeNode = BinaryTreeUtil.arrayToNode(array0);
+        Integer[] res = BinaryTreeUtil.treeNodeToArray(treeNode);
+        Integer[] array1 = new Integer[]{3, 5, 1, 6, 2, 0, 8, null, null, 7, 3};
+        Assert.assertArrayEquals(array1, res);
+    }
 }
