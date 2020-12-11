@@ -39,4 +39,13 @@ public class BinaryTreeUtilTest {
         Integer[] array1 = new Integer[]{3, 5, 1, 6, 2, 0, 8, null, null, 7, 3};
         Assert.assertArrayEquals(array1, res);
     }
+
+    @Test
+    public void test005() {
+        Integer[] array = new Integer[]{-1, null, 9, -6, 3, null, null, null, -2};
+        BinaryTreeUtil.TreeNode treeNode = BinaryTreeUtil.arrayToNode(array);
+        Integer[] res = BinaryTreeUtil.treeNodeToArray(treeNode);
+        Assert.assertArrayEquals(array, res);
+    }
+
 }

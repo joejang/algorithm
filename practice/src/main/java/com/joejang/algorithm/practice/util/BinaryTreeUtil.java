@@ -45,8 +45,8 @@ public class BinaryTreeUtil {
                     queue.add(right);
                     curr.left = left;
                     curr.right = right;
+                    currIndex++;
                 }
-                currIndex++;
             }
         }
         return root;

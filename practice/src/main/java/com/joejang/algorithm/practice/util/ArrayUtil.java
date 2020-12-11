@@ -75,6 +75,10 @@ public class ArrayUtil {
         return true;
     }
 
+    public static boolean listElemEquals(List<Integer> list1, List<Integer> list2) {
+        return list1.containsAll(list2) && list2.containsAll(list1);
+    }
+
     public static void printList(List<List<Integer>> list) {
         System.out.println("[");
         for (int i = 0; i < list.size(); i++) {
