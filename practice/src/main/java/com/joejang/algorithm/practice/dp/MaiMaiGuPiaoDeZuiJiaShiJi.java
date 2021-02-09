@@ -1,6 +1,5 @@
 package com.joejang.algorithm.practice.dp;
 
-import java.util.Objects;
 
 /*
 188. 买卖股票的最佳时机 IV
@@ -50,7 +49,6 @@ public class MaiMaiGuPiaoDeZuiJiaShiJi {
 
         // 初始化
         for (int day = 0; day < prices.length; day++) {
-            Objects.compare()
             for (int kRemain = 0; kRemain < k; kRemain++) {
                 for (int status = 0; status <= 1; status++) {
                     if (day == 0 && kRemain == 0 && status == 1) {

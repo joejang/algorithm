@@ -56,7 +56,7 @@ import java.util.Arrays;
 // 👍 1056 👎 0
 
 /**
- * 1.BSOD+状态转移方程过程标准哈‘
+ * 1.BSOD+状态转移方程过程标准化
  * 2.初始态amount==0,dp[0],dp[*]的初始化
  * 3.边界值2^31-1为int.max,dp[n]最大值amount+1，可设为int.max，n最大值10^4
  */
